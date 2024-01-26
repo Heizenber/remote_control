@@ -10,4 +10,8 @@ public class StereoOnWithCDCommand implements Command {
         stereo.setCd();
         stereo.setVolume(11);
     }
+
+    public void undo() {
+        stereo.off();
+    }
 }
