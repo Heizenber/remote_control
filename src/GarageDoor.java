@@ -1,6 +1,9 @@
 public class GarageDoor {
+    String location;
     
-    public GarageDoor() {}
+    public GarageDoor(String location) {
+        this.location = location;
+    }
 
     public void up() {
         System.out.println("Garage door is open");

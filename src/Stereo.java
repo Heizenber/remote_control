@@ -1,27 +1,31 @@
 public class Stereo {
-    public Stereo() {}
+    String location;
+
+    public Stereo(String location) {
+        this.location = location;
+    }
 
     public void on() {
-        System.out.println("Stereo is on");
+        System.out.println(this.location + " stereo is on");
     }
 
     public void off() {
-        System.out.println("Stereo is off");
+        System.out.println(this.location + " stereo is off");
     }
 
     public void setCd() {
-        System.out.println("Stereo is set for CD input");
+        System.out.println(this.location + " stereo is set for CD input");
     }
 
     public void setDvd() {
-        System.out.println("Stereo is set for DVD input");
+        System.out.println(this.location + " stereo is set for DVD input");
     }
 
     public void setRadio() {
-        System.out.println("Stereo is set for Radio");
+        System.out.println(this.location + " stereo is set for Radio");
     }
 
     public void setVolume(int volume) {
-        System.out.println("Stereo volume set to " + volume);
+        System.out.println(this.location + " stereo volume set to " + volume);
     }
 }
